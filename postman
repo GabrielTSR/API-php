@@ -1,0 +1,457 @@
+{
+	"info": {
+		"_postman_id": "d5ef1ec8-157e-4785-8fac-3f6035e65fde",
+		"name": "API PHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "READ_ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cod_pessoa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "acao",
+									"value": "readID",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/gabriel-tavares/php_projects/aula-14/API-php/v1/",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nome",
+									"value": "Juscelino",
+									"type": "text"
+								},
+								{
+									"key": "sobrenome",
+									"value": "Uncreudo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "cleitin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "+5511976346578",
+									"type": "text"
+								},
+								{
+									"key": "fotografia",
+									"value": "c://path",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/gabriel-tavares/php_projects/API-php/v1/?acao=create",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"API-php",
+								"v1",
+								""
+							],
+							"query": [
+								{
+									"key": "acao",
+									"value": "create"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cod_pessoa",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "Juscelin",
+									"type": "text"
+								},
+								{
+									"key": "sobrenome",
+									"value": "Uncreudo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "cleitin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "+5511976346578",
+									"type": "text"
+								},
+								{
+									"key": "fotografia",
+									"value": "c://path",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/gabriel-tavares/php_projects/API-php/v1/?acao=update",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"API-php",
+								"v1",
+								""
+							],
+							"query": [
+								{
+									"key": "acao",
+									"value": "update"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cod_pessoa",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "Juscelin",
+									"type": "text"
+								},
+								{
+									"key": "sobrenome",
+									"value": "Uncreudo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "cleitin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "+5511976346578",
+									"type": "text"
+								},
+								{
+									"key": "fotografia",
+									"value": "c://path",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/gabriel-tavares/php_projects/API-php/v1/?acao=update",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"API-php",
+								"v1",
+								""
+							],
+							"query": [
+								{
+									"key": "acao",
+									"value": "update"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "v2",
+			"item": [
+				{
+					"name": "READ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1/gabriel-tavares/php_projects/aula-14/API-php/v2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PESSOA_FIND_ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1/gabriel-tavares/php_projects/aula-14/API-php/v2/pessoa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v2",
+								"pessoa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PESSOA_FIND_BY_ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cod_pessoa\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/gabriel-tavares/php_projects/aula-14/API-php/v2/pessoa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v2",
+								"pessoa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PESSOA_CREATE_UPLOAD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nome",
+									"value": "João",
+									"type": "text"
+								},
+								{
+									"key": "sobrenome",
+									"value": "da Silva",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jogao.silva@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "1194355-98472",
+									"type": "text"
+								},
+								{
+									"key": "fotografia",
+									"type": "file",
+									"src": "/C:/Users/21192910/Desktop/cavalos.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1/gabriel-tavares/php_projects/aula-14/API-php/v2/pessoa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v2",
+								"pessoa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PESSOA_DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cod_pessoa\" : 35\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/gabriel-tavares/php_projects/aula-14/API-php/v2/pessoa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v2",
+								"pessoa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PESSOA_UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cod_pessoa\" : 37,\r\n    \"nome\" : \"João\",\r\n    \"sobrenome\" : \"da Silva\",\r\n    \"email\" : \"jogao.silva@gmail.com\",\r\n    \"celular\" : \"1194355-98472\",\r\n    \"fotografia\" : \"joaozin.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/gabriel-tavares/php_projects/aula-14/API-php/v2/pessoa/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"gabriel-tavares",
+								"php_projects",
+								"aula-14",
+								"API-php",
+								"v2",
+								"pessoa",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
